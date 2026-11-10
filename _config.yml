@@ -24,17 +24,17 @@ author:
   # Biographic information
   avatar           : "profile.png"  # upload your photo to /images/ and keep this name
   name             : "A F M Atik Bokhtiar Jarif"  # ← CHANGED
-  pronouns         : # example: "he/him"
+  pronouns         : example: "he/him"
   bio              : "B.Sc. student in CSE at Manarat International University. General Secretary of MIU CSE Club. Passionate about cybersecurity, ethical hacking, and robotics."  # ← CHANGED
   location         : "Dhaka, Bangladesh"  # ← CHANGED
   employer         : "Manarat International University"  # ← CHANGED
-  uri              : # URL
-  email            : "your.email@miu.edu.bd"  # ← CHANGED to your university email (or personal)
+  uri              :  "manarat.ac.bd"
+  email            : "afmjarif@gmail.com"  # ← CHANGED to your university email (or personal)
 
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"  # ← CHANGE to your own Scholar ID once created
+  googlescholar    : "https://scholar.google.com/citations?hl=en&user=7fC1AlUAAAAJ"  # ← CHANGE to your own Scholar ID once created
   inspire-hep      : # URL
   impactstory      : # URL
   orcid            : "https://orcid.org/yourorcidurl"  # ← add your ORCID if you have one, otherwise leave blank
@@ -57,28 +57,28 @@ author:
   # Social media
   artstation       : # Username
   bluesky          : # Replace this with your Bluesky username (remove the default "bsky.app")
-  facebook         : # Username
+  facebook         :  "afmjarif"
   flickr           : # Username
   foursquare       : # Username
   goodreads        : # Username
   google_plus      : # Username
   keybase          : # Username
-  instagram        : # Username
+  instagram        : "afmjarif"
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "afmjarif"
   mastodon         : # URL
-  medium           : # URL
+  medium           : "afmjarif"
   pinterest        : # Username
   soundcloud       : # Username
   steam            : # Username
-  telegram         : # URL
+  telegram         : 
   tumblr           : # Username
-  twitter          : # Username for X / Twitter
+  twitter          : "afmjarif"
   vine             : # Username
   weibo            : # Username
   wikipedia        : # Username
   xing             : # Username
-  youtube          : # Username
+  youtube          : "@afmjarif156"
   zhihu            : # Username
 
 # Publication Category - The following the list of publication categories and their headings
