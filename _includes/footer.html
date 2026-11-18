@@ -1,28 +1,15 @@
 <div class="page__footer-follow">
   <ul class="social-icons">
-    {% if site.data.navigation %}
-      {% for link in site.data.navigation %}
-        {% if link.url contains 'http' %}
-          {% assign domain = '' %}
-        {% else %}
-          {% assign domain = site.url | append: site.baseurl %}
-        {% endif %}
-        <li><a href="{{ domain }}{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ link.title }}</a></li>
-      {% endfor %}
-    {% endif %}
-    
-    <!-- Your Social Icons -->
     {% if site.author.github %}<li><a href="https://github.com/{{ site.author.github }}" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>{% endif %}
-    {% if site.author.facebook %}<li><a href="https://facebook.com/{{ site.author.facebook }}" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>{% endif %}
     {% if site.author.linkedin %}<li><a href="https://linkedin.com/in/{{ site.author.linkedin }}" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>{% endif %}
+    {% if site.author.facebook %}<li><a href="https://facebook.com/{{ site.author.facebook }}" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i> Facebook</a></li>{% endif %}
     {% if site.author.instagram %}<li><a href="https://instagram.com/{{ site.author.instagram }}" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>{% endif %}
-    {% if site.author.twitter %}<li><a href="https://x.com/{{ site.author.twitter }}" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i> X / Twitter</a></li>{% endif %}
-    {% if site.author.youtube %}<li><a href="https://youtube.com/@{{ site.author.youtube }}" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> YouTube</a></li>{% endif %}
     {% if site.author.medium %}<li><a href="{{ site.author.medium }}" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-medium" aria-hidden="true"></i> Medium</a></li>{% endif %}
+    {% if site.author.youtube %}<li><a href="https://youtube.com/@{{ site.author.youtube }}" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> YouTube</a></li>{% endif %}
   </ul>
 </div>
 
 <div class="page__footer-copyright">
-  &copy; 2026 {{ site.author.name }}. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io" rel="nofollow">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br/>
-  Site last updated 2026-11-07, <a href="{{ '/sitemap.xml' | relative_url }}">Sitemap</a>.
+  &copy; {{ site.time | date: "%Y" }} {{ site.author.name }}. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io" rel="nofollow">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br/>
+  Site last updated {{ site.time | date: "%Y-%m-%d" }}, <a href="{{ '/sitemap.xml' | relative_url }}">Sitemap</a>.
 </div>
