@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "Resume"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -9,56 +9,53 @@ redirect_from:
 
 {% include base_path %}
 
+[📄 Download PDF Resume]({{ base_path }}/files/AFM_JARIF_Resume.pdf){: .btn .btn--primary}
+
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* **B.Sc. in Computer Science & Engineering**, Manarat International University, Dhaka. *2024 – Present*
+  * CGPA: 3.61
+* **HSC (Science)**, Monipur Uchcha Vidyalaya and College, Mirpur, Dhaka. *2021 – 2023*
+  * GPA: 4.25
 
-Work experience
+Coursework
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Data Structures & Algorithms
+* Operating Systems
+* Network Security
+* Database Management System
+* Artificial Intelligence
+* Internet & Web Programming
+* Software Development
+* Digital Event Operations & Automation
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+Positions of Responsibility
+======
+* **General Secretary**, MIU CSE Club. *June 2026 – Present*
+* **Executive Member**, MIU CSE Club. *March 2025 – December 2025*
+* **Class Representative (CR)**, Batch-65. *January 2025 – Present*
+  * Actively participating in academic and technical activities
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
+Projects
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* **Tic-Tac-Toe Web Game**. *April 2026*. Published via GitHub Pages. [Details]({{ base_path }}/portfolio/tic-tac-toe/)
+* **Line Follower Robot**. *December 2025*. Arduino Nano based. [Details]({{ base_path }}/portfolio/line-follower-robot/)
 
-Publications
+More on the [Projects]({{ base_path }}/projects/) page.
+
+Experience
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
+* Qualified for the Final Round of **ICPC 2025** (hosted by BUBT). *December 2025*
+* Participated in **Robotics Fest**. *November 2025*
+* Participated in **Career Development Workshop** (Campus). *July 2025*
+
+Technical Skills
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
+* **Languages:** Python, Java, C, C++, MySQL, App Script
+* **Developer Tools:** VS Code, Android Studio, Xcode, Sublime Text, Arduino IDE
+* **Technologies / Frameworks:** Linux, GitHub, Node.js, Google Apps Script, TypeScript, MS Office
+* **Soft Skills:** Communication, Teamwork, Collaboration, Problem Solving, Time Management
+
+Achievements & Certifications
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+See the full list with certificate links on the [Events & Certificates]({{ base_path }}/events/) page.
