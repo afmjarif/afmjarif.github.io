@@ -1,0 +1,27 @@
+---
+layout: default
+---
+{% include base_path %}
+<div id="main" role="main">
+  {% include sidebar.html %}
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <div class="page__inner-wrap">
+      <header>
+        <h1 class="page__title" itemprop="headline">{{ page.title }}</h1>
+        {% if page.date_display != blank %}<p class="page__meta"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ page.date_display }}</p>{% endif %}
+      </header>
+      <section class="page__content" itemprop="text">
+        <div class="item-actions">
+          {% if page.live != blank %}<a class="btn btn--primary" href="{{ page.live }}" target="_blank" rel="noopener">🌐 Live Site</a>{% endif %}
+          {% if page.repo != blank %}<a class="btn" href="{{ page.repo }}" target="_blank" rel="noopener">GitHub Repository</a>{% endif %}
+        </div>
+        {% if page.stack and page.stack.size > 0 %}
+          <p>{% for s in page.stack %}<span class="tag">{{ s }}</span>{% endfor %}</p>
+        {% endif %}
+        {{ content }}
+        {% include gallery-grid.html images=page.images folder="/projects/assets/" %}
+        <p><a href="{{ '/projects/' | relative_url }}">&larr; All projects</a></p>
+      </section>
+    </div>
+  </article>
+</div>

@@ -8,9 +8,12 @@ redirect_from:
 ---
 
 {% include base_path %}
+<p>Web, robotics and security projects I have built. Click a card for details, images and links.</p>
 
-A collection of things I have built: web, robotics, and security projects.
-
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
+<div class="card-grid">
+{% assign items = site.projects | sort: "date" | reverse %}
+{% for p in items %}
+  {% if p.thumbnail != blank %}{% capture thumb %}/projects/assets/{{ p.thumbnail }}{% endcapture %}{% else %}{% assign thumb = "" %}{% endif %}
+  {% include card.html href=p.url image=thumb title=p.title meta=p.date_display text=p.excerpt %}
 {% endfor %}
+</div>

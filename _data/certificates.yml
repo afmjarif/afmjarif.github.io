@@ -1,0 +1,61 @@
+# One entry per certificate. Put files inside  certificates/assets/
+#   image : preview picture (jpg/png)   -> shown on the card
+#   pdf   : certificate PDF             -> "View certificate" button
+#   link  : optional verification URL   -> "Verify" button
+# Replace every "TODO" with the real value, then commit.
+
+- name: "Claude 101"
+  issuer: "Anthropic Academy"
+  date: "TODO"
+  image: "claude-101.jpg"
+  pdf: "claude-101.pdf"
+  link: ""
+  description: ""
+
+- name: "Cyber Hero"
+  issuer: "AWS / Arena Web Security"
+  date: "TODO"
+  image: "cyber-hero.jpg"
+  pdf: "cyber-hero.pdf"
+  link: ""
+  description: ""
+
+- name: "Creative IT Training"
+  issuer: "Creative IT"
+  date: "TODO"
+  image: "creative-it.jpg"
+  pdf: "creative-it.pdf"
+  link: ""
+  description: ""
+
+- name: "14 Days Ansar Training (Self Defense)"
+  issuer: "TODO (issuing organization)"
+  date: "TODO"
+  image: "ansar-training.jpg"
+  pdf: "ansar-training.pdf"
+  link: ""
+  description: ""
+
+- name: "ICPC 2025 Participation"
+  issuer: "ICPC 2025, hosted by BUBT"
+  date: "December 2025"
+  image: "icpc-2025.jpg"
+  pdf: "icpc-2025.pdf"
+  link: ""
+  description: "Qualified for the final round."
+
+- name: "Ismail Al-Jazari Robotics Fest 2025 (Line Follower Contest)"
+  issuer: "Ismail Al-Jazari Robotics Fest 2025"
+  date: "13 November 2025"
+  image: "robotics-fest-2025.jpg"
+  pdf: "robotics-fest-2025.pdf"
+  link: ""
+  description: ""
+
+- name: "Al-Khwarizmi Science Fest 2025 (Volunteer)"
+  issuer: "Al-Khwarizmi Science Fest 2025"
+  date: "29-30 January 2026"
+  image: "science-fest-2025.jpg"
+  pdf: "science-fest-2025.pdf"
+  link: ""
+  description: ""

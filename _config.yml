@@ -1,165 +1,67 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve -l -H localhost`. If you change this file, please restart the 
-# server process.
-
-# Basic Site Settings
+# ===== Basic Site Settings =====
 locale                   : "en-US"
-site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "A F M Atik Bokhtiar Jarif"  # ← CHANGED
+site_theme               : "default"
+title                    : "A F M Atik Bokhtiar Jarif"
 title_separator          : "-"
-name                     : &name "A F M Atik Bokhtiar Jarif"  # ← CHANGED
-description              : &description "Computer Science student | Cybersecurity Enthusiast | Ethical Hacking & Robotics"  # ← CHANGED
-url                      : "https://afmjarif.github.io"  # ← CHANGED
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "afmjarif/afmjarif.github.io"  # ← CHANGED
+name                     : &name "A F M Atik Bokhtiar Jarif"
+description              : &description "Computer Science student | Cybersecurity Enthusiast | Ethical Hacking & Robotics"
+url                      : "https://afmjarif.github.io"
+baseurl                  : ""
+repository               : "afmjarif/afmjarif.github.io"
 
-# Site Author - The following control what appear as part of the author content on the side bar.
-#               If a field is blank the icon and link will not appear, otherwise it will be shown.
-#               Additional customization can be done by editing /_includes/author-profile.html
+# ===== Author (sidebar) =====
 author:
-  # Biographic information
-  avatar           : "profile.png"  # upload your photo to /images/ and keep this name
-  name             : "A F M Atik Bokhtiar Jarif"  # ← CHANGED
-  pronouns         : example: "he/him"
-  bio              : "B.Sc. student in CSE at Manarat International University. General Secretary of MIU CSE Club. Passionate about cybersecurity, ethical hacking, and robotics."  # ← CHANGED
-  location         : "Dhaka, Bangladesh"  # ← CHANGED
-  employer         : "Manarat International University"  # ← CHANGED
-  uri              :  "manarat.ac.bd"
-  email            : "afmjarif@gmail.com"  # ← CHANGED to your university email (or personal)
+  avatar           : "profile.png"          # file in /images/
+  name             : "A F M Atik Bokhtiar Jarif"
+  bio              : "B.Sc. student in CSE at Manarat International University. General Secretary of MIU CSE Club. Passionate about cybersecurity, ethical hacking, and robotics."
+  location         : "Dhaka, Bangladesh"
+  employer         : "Manarat International University"
+  uri              : "https://www.manarat.ac.bd"
+  email            : "afmjarif@gmail.com"
+  phone            : "+8801575827658"
 
-  # Academic websites
-  academia         : # URL
-  arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?hl=en&user=7fC1AlUAAAAJ"  # ← CHANGE to your own Scholar ID once created
-  inspire-hep      : # URL
-  impactstory      : # URL
-  orcid            : "https://orcid.org/yourorcidurl"  # ← add your ORCID if you have one, otherwise leave blank
-  semantic         : # URL
-  ssrn             : # URL
-  pubmed           : # leave blank (not relevant for you)
-  researchgate     : # URL
-  scopus           : # URL
-  zotero           : # URL
+  googlescholar    : "https://scholar.google.com/citations?hl=en&user=7fC1AlUAAAAJ"
 
-
-  # Repositories and software development
-  bitbucket        : # Username
-  codepen          : # Username
-  dribbble         : # Username
-  github           : "afmjarif"  # ← CHANGED to your GitHub username
-  kaggle           : # Username  
-  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
-
-  # Social media
-  artstation       : # Username
-  bluesky          : # Replace this with your Bluesky username (remove the default "bsky.app")
-  facebook         :  "afmjarif"
-  flickr           : # Username
-  foursquare       : # Username
-  goodreads        : # Username
-  google_plus      : # Username
-  keybase          : # Username
+  github           : "afmjarif"
+  facebook         : "afmjarif"
   instagram        : "afmjarif"
-  lastfm           : # Username
   linkedin         : "afmjarif"
-  mastodon         : # URL
-  medium           : "afmjarif"
-  pinterest        : # Username
-  soundcloud       : # Username
-  steam            : # Username
-  telegram         : 
-  tumblr           : # Username
+  medium           : "https://medium.com/@afmjarif"
   twitter          : "afmjarif"
-  vine             : # Username
-  weibo            : # Username
-  wikipedia        : # Username
-  xing             : # Username
-  youtube          : "@afmjarif156"
-  zhihu            : # Username
+  youtube          : "afmjarif156"
 
-# Publication Category - The following the list of publication categories and their headings
-publication_category:
-  books:
-    title: 'Books'
-  manuscripts:
-    title: 'Journal Articles'    
-  conferences:
-    title: 'Conference Papers'
-
-# Site Settings
-teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
-breadcrumbs              : false # true, false (default)
+# ===== Site Settings =====
+teaser                   :
+breadcrumbs              : false
 words_per_minute         : 160
-future                   : true
-read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-talkmap_link             : false      #change to true to add link to talkmap on talks page
+future                   : false
+read_more                : "disabled"
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
-  disqus:
-    shortname            :
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
-staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "gh-pages" # "master", "gh-pages"
-  commitMessage          : "New comment."
-  filename               : comment-{@timestamp}
-  format                 : "yml"
-  moderation             : true
-  path                   : "_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
-  transforms:
-    email                : "md5"
-  generatedFields:
-    date:
-      type               : "date"
-      options:
-        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+  provider               :
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
-  path                   : # blank (default) uses feed.xml
+  hide                   : false
+  path                   :
 
-
-# SEO Related
-google_site_verification :
-bing_site_verification   :
-alexa_site_verification  :
-yandex_site_verification :
-
-
-# Social Sharing
+# ===== SEO / Social =====
 twitter:
   username               : &twitter
 facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : og-image.png   # Social media default site image (lives in /images/)
-og_description           :  # Social media default site image description
-# For specifying social profiles
-# - https://developers.google.com/structured-data/customize/social-profiles
+og_image                 : og-image.png
+og_description           :
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   :
+  name                   :
+  links:
 
-
-# Analytics
 analytics:
-  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
+  provider               : false
   google:
     tracking_id          :
 
-
-# Reading Files
+# ===== Reading Files =====
 include:
   - .htaccess
   - _pages
@@ -189,6 +91,8 @@ exclude:
   - package.json*
   - Rakefile
   - README
+  - GUIDE.md
+  - cleanup.sh
   - tmp
   - vendor
 keep_files:
@@ -197,16 +101,13 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-
-# Conversion
+# ===== Conversion =====
 markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
 
-
-# Markdown Processing
 kramdown:
   input: GFM
   hard_wrap: false
@@ -217,26 +118,17 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-
-# These settings control the types of collections used by the template
+# ===== Collections =====
 collections:
-  teaching:
+  projects:
     output: true
     permalink: /:collection/:path/
-  publications:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
+  events:
     output: true
     permalink: /:collection/:path/
 
-
-# These settings control how pages and collections are included in the site
+# ===== Defaults =====
 defaults:
-  # _posts
   - scope:
       path: ""
       type: posts
@@ -244,67 +136,36 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      comments: false
       share: true
-      related: true
-  # _pages
+      related: false
   - scope:
       path: ""
       type: pages
     values:
       layout: single
       author_profile: true
-  # _teaching
   - scope:
       path: ""
-      type: teaching
+      type: projects
     values:
-      layout: single
+      layout: project
       author_profile: true
-      share: true
-      comments: true
-  # _publications
   - scope:
       path: ""
-      type: publications
+      type: events
     values:
-      layout: single
+      layout: event
       author_profile: true
-      share: true
-      comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
 
-
-# Sass/SCSS
 sass:
   sass_dir: _sass
-  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  style: compressed
 
+# Blog posts live at /blog/<title>/
+permalink: /blog/:title/
+timezone: Asia/Dhaka
 
-# Outputting
-permalink: /:categories/:title/
-# paginate: 5 # amount of posts to show
-# paginate_path: /page:num/
-timezone: Etc/UTC # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
-
-# Plugins
 plugins:
   - jekyll-feed
   - jekyll-gist
@@ -313,7 +174,6 @@ plugins:
   - jekyll-redirect-from
   - jemoji
 
-# Mimic GitHub Pages with --safe
 whitelist:
   - jekyll-feed
   - jekyll-gist
@@ -322,38 +182,13 @@ whitelist:
   - jekyll-redirect-from
   - jemoji
 
-
-# Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path/my-awesome-category/index.html ~> path: /
 category_archive:
   type: liquid
   path: /categories/
 tag_archive:
   type: liquid
   path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
 
-
-# HTML Compression
-# - https://jch.penibelst.de/
 compress_html:
   clippings: all
   comments: ["<!-- ", " -->"]

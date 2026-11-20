@@ -18,10 +18,8 @@ I am a Computer Science and Engineering student at **Manarat International Unive
 ### 🚀 Highlights
 *   Qualified for the **Final Round of ICPC 2025** (hosted by BUBT)
 *   **1st Position**, Rubik's Cube Solving (CSE Day 2024 and MIU Sports Club)
-*   Built a **Line Follower Robot** on Arduino Nano and participated in Robotics Fest 2025
+*   Built a **Line Follower Robot** on Arduino Nano for the Ismail Al-Jazari Robotics Fest 2025
 *   Certified: **Claude 101 (Anthropic Academy)**, **Cyber Hero (AWS / Arena Web Security)**
 
 ### 🔗 Explore
-*   [Projects]({{ '/projects/' | relative_url }})
-*   [Events & Certificates]({{ '/events/' | relative_url }})
-*   [Resume / CV]({{ '/cv/' | relative_url }})
+[Education]({{ '/education/' | relative_url }}) · [Skills]({{ '/skills/' | relative_url }}) · [Projects]({{ '/projects/' | relative_url }}) · [Events]({{ '/events/' | relative_url }}) · [Certificates]({{ '/certificates/' | relative_url }}) · [Blog]({{ '/blog/' | relative_url }}) · [Resume]({{ '/cv/' | relative_url }})

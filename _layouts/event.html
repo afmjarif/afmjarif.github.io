@@ -1,0 +1,24 @@
+---
+layout: default
+---
+{% include base_path %}
+<div id="main" role="main">
+  {% include sidebar.html %}
+  <article class="page" itemscope itemtype="http://schema.org/Event">
+    <div class="page__inner-wrap">
+      <header>
+        <h1 class="page__title" itemprop="headline">{{ page.title }}</h1>
+        <p class="page__meta">
+          {% if page.date_display != blank %}<i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ page.date_display }}{% endif %}
+          {% if page.location != blank %} &nbsp; <i class="fa fa-fw fa-location-dot" aria-hidden="true"></i> {{ page.location }}{% endif %}
+          {% if page.role != blank %} &nbsp; <i class="fa fa-fw fa-user" aria-hidden="true"></i> {{ page.role }}{% endif %}
+        </p>
+      </header>
+      <section class="page__content" itemprop="text">
+        {{ content }}
+        {% include gallery-grid.html images=page.images folder="/events/assets/" %}
+        <p><a href="{{ '/events/' | relative_url }}">&larr; All events</a></p>
+      </section>
+    </div>
+  </article>
+</div>

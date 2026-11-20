@@ -1,0 +1,11 @@
+---
+layout: archive
+title: "Skills"
+permalink: /skills/
+author_profile: true
+---
+
+{% for g in site.data.skills %}
+<h2>{{ g.group }}</h2>
+<p>{% for s in g.items %}<span class="tag">{{ s }}</span>{% endfor %}</p>
+{% endfor %}

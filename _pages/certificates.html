@@ -1,0 +1,31 @@
+---
+layout: archive
+title: "Certificates"
+permalink: /certificates/
+author_profile: true
+---
+
+{% include base_path %}
+<p>Click a certificate to open the full PDF.</p>
+
+<div class="card-grid">
+{% for c in site.data.certificates %}
+  {% if c.image != blank %}{% capture img %}/certificates/assets/{{ c.image }}{% endcapture %}{% else %}{% assign img = "/images/placeholder.svg" %}{% endif %}
+  {% if c.pdf != blank %}{% capture pdfurl %}/certificates/assets/{{ c.pdf }}{% endcapture %}{% else %}{% assign pdfurl = img %}{% endif %}
+  <div class="card">
+    <a href="{{ pdfurl | relative_url }}" target="_blank" rel="noopener">
+      <img class="card__img" loading="lazy" alt="{{ c.name | escape }}" src="{{ img | relative_url }}"
+           onerror="this.onerror=null;this.src='{{ '/images/placeholder.svg' | relative_url }}';">
+    </a>
+    <div class="card__body">
+      <h3 class="card__title">{{ c.name }}</h3>
+      <p class="card__meta">{{ c.issuer }}{% if c.date != blank %} · {{ c.date }}{% endif %}</p>
+      {% if c.description != blank %}<p class="card__text">{{ c.description }}</p>{% endif %}
+      <div class="card__actions">
+        {% if c.pdf != blank %}<a class="btn btn--small" href="{{ pdfurl | relative_url }}" target="_blank" rel="noopener">View certificate</a>{% endif %}
+        {% if c.link != blank %}<a class="btn btn--small btn--inverse" href="{{ c.link }}" target="_blank" rel="noopener">Verify</a>{% endif %}
+      </div>
+    </div>
+  </div>
+{% endfor %}
+</div>

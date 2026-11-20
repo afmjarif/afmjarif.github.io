@@ -13,41 +13,29 @@ redirect_from:
 
 Education
 ======
-* **B.Sc. in Computer Science & Engineering**, Manarat International University, Dhaka. *2024 – Present*
-  * CGPA: 3.61
-* **HSC (Science)**, Monipur Uchcha Vidyalaya and College, Mirpur, Dhaka. *2021 – 2023*
-  * GPA: 4.25
+* **B.Sc. in Computer Science & Engineering**, Manarat International University, Dhaka. *2024 – Present* (CGPA 3.61)
+* **HSC (Science)**, Monipur Uchcha Vidyalaya and College, Mirpur, Dhaka. *2021 – 2023* (GPA 4.25)
 
 Coursework
 ======
-* Data Structures & Algorithms
-* Operating Systems
-* Network Security
-* Database Management System
-* Artificial Intelligence
-* Internet & Web Programming
-* Software Development
-* Digital Event Operations & Automation
+Data Structures & Algorithms · Operating Systems · Network Security · Database Management System · Artificial Intelligence · Internet & Web Programming · Software Development · Digital Event Operations & Automation
 
 Positions of Responsibility
 ======
 * **General Secretary**, MIU CSE Club. *June 2026 – Present*
 * **Executive Member**, MIU CSE Club. *March 2025 – December 2025*
 * **Class Representative (CR)**, Batch-65. *January 2025 – Present*
-  * Actively participating in academic and technical activities
 
 Projects
 ======
-* **Tic-Tac-Toe Web Game**. *April 2026*. Published via GitHub Pages. [Details]({{ base_path }}/portfolio/tic-tac-toe/)
-* **Line Follower Robot**. *December 2025*. Arduino Nano based. [Details]({{ base_path }}/portfolio/line-follower-robot/)
+* [Tic-Tac-Toe Web Game]({{ base_path }}/projects/tic-tac-toe/) · [MIU AI Summit]({{ base_path }}/projects/miu-ai-summit/) · [MIU Seminar Scanner]({{ base_path }}/projects/miu-seminar-scanner/) · [Smart RC Car]({{ base_path }}/projects/smart-rc-car/) · [CyberScan Smart Radar]({{ base_path }}/projects/cyberscan/) · [Line Follower Robot]({{ base_path }}/projects/line-follower-robot/)
 
-More on the [Projects]({{ base_path }}/projects/) page.
-
-Experience
+Experience & Events
 ======
 * Qualified for the Final Round of **ICPC 2025** (hosted by BUBT). *December 2025*
-* Participated in **Robotics Fest**. *November 2025*
+* Participated in **Ismail Al-Jazari Robotics Fest 2025** (Line Follower Contest). *13 November 2025*
 * Participated in **Career Development Workshop** (Campus). *July 2025*
+* Volunteer, **Al-Khwarizmi Science Fest 2025**. *29–30 January 2026*
 
 Technical Skills
 ======
@@ -58,4 +46,4 @@ Technical Skills
 
 Achievements & Certifications
 ======
-See the full list with certificate links on the [Events & Certificates]({{ base_path }}/events/) page.
+See [Events]({{ base_path }}/events/) and [Certificates]({{ base_path }}/certificates/) for details and proof.

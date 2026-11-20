@@ -1,0 +1,11 @@
+{% comment %} params: href, image, title, meta, text {% endcomment %}
+<a class="card" href="{{ include.href | relative_url }}">
+  <img class="card__img" loading="lazy" alt="{{ include.title | escape }}"
+       src="{% if include.image != blank %}{{ include.image | relative_url }}{% else %}{{ '/images/placeholder.svg' | relative_url }}{% endif %}"
+       onerror="this.onerror=null;this.src='{{ '/images/placeholder.svg' | relative_url }}';">
+  <div class="card__body">
+    <h3 class="card__title">{{ include.title }}</h3>
+    {% if include.meta != blank %}<p class="card__meta">{{ include.meta }}</p>{% endif %}
+    {% if include.text != blank %}<p class="card__text">{{ include.text | strip_html | truncate: 140 }}</p>{% endif %}
+  </div>
+</a>

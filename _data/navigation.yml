@@ -1,13 +1,17 @@
-# The following is the top navigation bar
 main:
   - title: "About Me"
-    url: /about/
-
+    url: /
+  - title: "Education"
+    url: /education/
+  - title: "Skills"
+    url: /skills/
   - title: "Projects"
     url: /projects/
-
-  - title: "Events & Certificates"
+  - title: "Events"
     url: /events/
-
+  - title: "Certificates"
+    url: /certificates/
+  - title: "Blog"
+    url: /blog/
   - title: "Resume"
     url: /cv/
