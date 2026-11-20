@@ -1,0 +1,35 @@
+# One block per institute. Blank "value" lines are hidden on the site,
+# so just fill in the results later and commit.
+
+- name: "Manarat International University"
+  url: "https://manarat.ac.bd/"
+  location: "Khagan, Ashulia, Savar, Dhaka, Bangladesh"
+  program: "B.Sc. in Computer Science and Engineering (CSE)"
+  period: "September 2024 – Present"
+  details:
+    - label: "Current CGPA"
+      value: "3.61"
+    - label: "Current Semester"
+      value: "3rd Year (7th Semester)"
+
+- name: "Monipur Uchcha Vidyalaya and College"
+  url: "https://mubc.edu.bd/"
+  location: "Rupnagar, Mirpur-2, Dhaka, Bangladesh"
+  program: "Higher Secondary Certificate (HSC), Science"
+  period: "2021 – 2023"
+  details:
+    - label: "Result (GPA)"
+      value: "4.25"
+
+- name: "Merit Care School and College"
+  url: "https://www.facebook.com/meritcsc/"
+  location: "Joykali Bazar, Ranisankail, Thakurgaon, Bangladesh"
+  program: "Primary to Secondary Education"
+  period: "2005 – 2021"
+  details:
+    - label: "PSC (2015) Result"
+      value: ""
+    - label: "JSC (2018) Result"
+      value: ""
+    - label: "SSC (2021) Result"
+      value: ""

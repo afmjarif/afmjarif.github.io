@@ -1,0 +1,28 @@
+---
+layout: archive
+title: "Education"
+permalink: /education/
+author_profile: true
+redirect_from:
+  - /skills/
+---
+
+<h2>Academic Background</h2>
+
+{% for e in site.data.education %}
+<div class="edu">
+  <h3 class="edu__name">{% if e.url != blank %}<a href="{{ e.url }}" target="_blank" rel="noopener">{{ e.name }}</a>{% else %}{{ e.name }}{% endif %}</h3>
+  <p class="edu__loc">{{ e.location }}</p>
+  <p class="edu__program"><strong>{{ e.program }}</strong><span class="entry__date">{{ e.period }}</span></p>
+  <ul>
+    {% for d in e.details %}{% if d.value != blank %}<li>{{ d.label }}: <strong>{{ d.value }}</strong></li>{% endif %}{% endfor %}
+  </ul>
+</div>
+{% endfor %}
+
+<h2>Skills</h2>
+
+{% for g in site.data.skills %}
+<h3>{{ g.group }}</h3>
+<p>{% for s in g.items %}<span class="tag">{{ s }}</span>{% endfor %}</p>
+{% endfor %}

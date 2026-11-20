@@ -3,12 +3,12 @@ main:
     url: /
   - title: "Education"
     url: /education/
-  - title: "Skills"
-    url: /skills/
   - title: "Projects"
     url: /projects/
   - title: "Events"
     url: /events/
+  - title: "Album"
+    url: /album/
   - title: "Certificates"
     url: /certificates/
   - title: "Blog"

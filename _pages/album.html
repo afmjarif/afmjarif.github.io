@@ -1,0 +1,24 @@
+---
+layout: archive
+title: "Album"
+permalink: /album/
+author_profile: true
+---
+
+<p>Photos from the events, contests and activities I have taken part in. Click a photo to open it, or the title to read about the event.</p>
+
+{% assign events_sorted = site.events | sort: "date" | reverse %}
+{% assign photo_count = 0 %}
+<div class="gallery-grid album-grid">
+{% for e in events_sorted %}
+  {% for img in e.images %}
+    {% assign photo_count = photo_count | plus: 1 %}
+    {% capture src %}/events/assets/{{ img.file }}{% endcapture %}
+    <figure>
+      <a href="{{ src | relative_url }}" target="_blank" rel="noopener"><img src="{{ src | relative_url }}" alt="{{ e.title | escape }}" loading="lazy"></a>
+      <figcaption><a href="{{ e.url | relative_url }}"><strong>{{ e.title }}</strong></a>{% if e.date_display != blank %}<br>{{ e.date_display }}{% endif %}{% if img.caption != blank %}<br>{{ img.caption }}{% endif %}</figcaption>
+    </figure>
+  {% endfor %}
+{% endfor %}
+</div>
+{% if photo_count == 0 %}<p>Photos will appear here once they are added to the events.</p>{% endif %}
