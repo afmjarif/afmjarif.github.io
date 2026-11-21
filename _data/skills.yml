@@ -1,11 +1,13 @@
 # Edit skills here. Each group becomes a section of tags on /skills/
 - group: "Programming Languages"
-  items: [Python, Java, C, "C++", MySQL, "Google Apps Script", TypeScript]
+  items: [Python, Java, C, "C++"]
+- group: "Web Languages"
+  items: [HTML, CSS, JS, TypeScript]
 - group: "Developer Tools"
   items: ["VS Code", "Android Studio", Xcode, "Sublime Text", "Arduino IDE"]
 - group: "Technologies & Frameworks"
   items: [Linux, GitHub, "Node.js", "Google Apps Script", TypeScript, "MS Office"]
 - group: "Focus Areas"
-  items: [Cybersecurity, "Ethical Hacking", Robotics, "Web Development", "Competitive Programming"]
+  items: [Cybersecurity, "Ethical Hacking", Robotics, "Web Development"]
 - group: "Soft Skills"
   items: [Communication, Teamwork, Collaboration, "Problem Solving", "Time Management", Leadership]
